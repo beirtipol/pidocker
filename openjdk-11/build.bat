@@ -1,0 +1,1 @@
+docker-buildx build --platform linux/arm/v7 -t beirtipol/openjdk:11 --push .
