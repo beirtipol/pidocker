@@ -1,0 +1,1 @@
+docker-buildx build --platform linux/arm/v7 -t beirtipol/filebeat:7.6.2 --push .

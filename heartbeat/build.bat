@@ -1,0 +1,1 @@
+docker-buildx build --platform linux/arm/v7 -t beirtipol/heartbeat:7.6.2 --push .
