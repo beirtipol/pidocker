@@ -2,7 +2,7 @@
 
 - hosts: raspberry_pi
 
-  user: pi
+  user: beirti
   become: yes
   become_user: root
   become_method: sudo
@@ -12,7 +12,7 @@
     - node_exporter
 
 - hosts: monitoring_server
-  user: pi
+  user: beirti
   become: yes
   become_user: root
   become_method: sudo
