@@ -1,0 +1,26 @@
+---
+
+all:
+
+  hosts:
+    pinode01:
+      ansible_host: pinode01
+    pinode02:
+      ansible_host: pinode02
+    pinode03:
+      ansible_host: pinode03
+    pinode04:
+      ansible_host: pinode04
+  children:
+    raspberry_pi:
+      hosts:
+        pinode01: {}
+        pinode02: {}
+        pinode03: {}
+        pinode04: {}
+    monitoring_server:
+      hosts:
+        pinode01: {}
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    remote_user: beirti
