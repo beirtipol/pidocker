@@ -1,0 +1,1 @@
+docker-buildx build --platform linux/arm/v7 -t beirtipol/teamcity-server:2019.2.4 --push .
